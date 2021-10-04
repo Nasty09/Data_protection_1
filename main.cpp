@@ -1,7 +1,3 @@
-// Усложнить Transform
-// Добавить дополнительные функции и витвления
-
-
 #include <iostream>
 #include <string>
 #include <vector>
@@ -16,7 +12,7 @@ std::ostream& operator<<(std::ostream& out, std::vector<char> s)
 {
     for (int i = 0; i < s.size(); i++)
     {
-        out << /*std::hex <<*/(s[i]);
+        out << (s[i]);
     }
     return out;
 }
@@ -83,7 +79,6 @@ int main()
     std::cin >> d;
     b = str2list(d);
     std::cout << b << "\n\n";
-    //b = str2list();
     if (b == c)
     {
         std::cout << SUCCESS;
